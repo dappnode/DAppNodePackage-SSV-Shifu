@@ -5,6 +5,5 @@ eth2:
   BeaconNodeAddr:
 eth1:
   ETH1Addr: 
-  RegistryContractAddr: 
 OperatorPrivateKey:
 MetricsAPIPort: 15000
