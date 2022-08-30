@@ -4,8 +4,8 @@ This package allows Dappnode Users to help test the SSV Network.
 
 Note - You will need SSH or direct console access to your Dappnode in order to use it to generate your operator keys.
 
-
-_Warning: This package is separate from the SSV Prater Package, and they are incompatible with each other. If you participated in the first V1 SSV testnet "Primus" please keep your operator running until the SSV team announces the official end of the V1 test._
+_Warning: This package is separate from the SSV Prater Package.
+If you participated in the first V1 SSV testnet "Primus" please keep your operator running until the SSV team announces the official end of the V1 test._
 
 ## Generate Operator Keys
 
