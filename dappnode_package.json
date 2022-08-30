@@ -16,7 +16,11 @@
   "license": "GPL-3.0",
   "links": {
     "explorer": "https://explorer.ssv.network/",
-    "homepage": "https://ssv.network/"
+    "homepage": "https://ssv.network/",
+    "Deposit Bot": "https://discord.gg/CBwPUX2Aav",
+    "Docs": "https://docs.ssv.network/learn/introduction",
+    "tSSV Faucet": "https://faucet.ssv.network/",
+    "Web App": "http://app.ssv.network/"
   },
   "repository": {
     "type": "git",
