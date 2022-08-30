@@ -1,15 +1,16 @@
 {
-  "name": "ssv-prater.dnp.dappnode.eth",
+  "name": "ssv-shifu.dnp.dappnode.eth",
   "version": "0.1.0",
   "upstreamVersion": "v0.3.1",
   "upstreamRepo": "bloxapp/ssv",
   "upstreamArg": "UPSTREAM_VERSION",
-  "shortDescription": "Secret Shared Validator Prater Testnet",
+  "shortDescription": "Secret Shared Validator Goerli Shifu Testnet",
   "description": "SSV.network is a decentralized ETH staking network enabling the distributed operation of an Ethereum validator. The network allows both users and operators to diversify staking risks, optimize performance, and promote decentralization across the Ethereum consensus layer.",
   "type": "service",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "contributors": [
-    "Eduardo Antuña <edu@dappnode.io> (https://github.com/eduadiez)"
+    "Eduardo Antuña <edu@dappnode.io> (https://github.com/eduadiez)",
+    "Voss <alex@visnovaventures.com> (https://github.com/alexpeterson91)"
   ],
   "categories": ["Blockchain", "ETH2.0"],
   "license": "GPL-3.0",
@@ -19,13 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dappnode/DAppNodePackage-SSV.git"
+    "url": "git+https://github.com/dappnode/DAppNodePackage-SSV-Shifu.git"
   },
   "bugs": {
-    "url": "https://github.com/dappnode/DAppNodePackage-SSV/issues"
+    "url": "https://github.com/dappnode/DAppNodePackage-SSV-Shifu/issues"
   },
   "dependencies": {
-    "goerli-geth.dnp.dappnode.eth": "latest",
-    "prysm-prater.dnp.dappnode.eth": "latest"
+    "goerli-geth.dnp.dappnode.eth": "latest"
   }
 }
