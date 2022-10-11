@@ -10,8 +10,8 @@ services:
     volumes:
       - "shifu:/data"
     ports:
-      - "12514:12514/TCP"
-      - "13514:13514/UDP"
+      - "12514:12514/tcp"
+      - "13514:13514/udp"
     environment:
       CONFIG_PATH: ./config.yml
       DB_PATH: /data/db
