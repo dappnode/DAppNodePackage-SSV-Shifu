@@ -17,20 +17,6 @@ fields:
       Please check the official documentation from the SSV Team [here](https://docs.ssv.network/run-a-node/operator-node/installation#generate-operator-keys) for more information. 
       Note - You will need SSH or direct console access to your Dappnode in order to use it to generate your operator keys.
     required: true
-  - id: BEACON_NODE_ADDR
-    target:
-      type: environment
-      name: BEACON_NODE_ADDR
-    title: Consensus Layer Beacon-Chain
-    description: >-
-      URL to the Consensus Layer Goerli Beacon-Chain Endpoint
-  - id: ETH1ADDR
-    target:
-      type: environment
-      name: ETH1ADDR
-    title: Execution Layer Full Node
-    description: >-
-      URL to the Execution Layer Goerli node
   - id: LOG_LEVEL
     target:
       type: environment

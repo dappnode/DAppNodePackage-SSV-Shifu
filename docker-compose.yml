@@ -1,4 +1,4 @@
-version: "3.4"
+version: "3.5"
 services:
   ssv-shifu.dnp.dappnode.eth:
     image: "ssv-shifu.dnp.dappnode.eth:0.1.0"
@@ -16,8 +16,6 @@ services:
       CONFIG_PATH: ./config.yml
       DB_PATH: /data/db
       NETWORK: prater
-      BEACON_NODE_ADDR: "beacon-chain.prysm-prater.dappnode:3500"
-      ETH1ADDR: "ws://goerli-geth.dappnode:8546"
       OPERATOR_PRIVATE_KEY: ""
       LOG_LEVEL: info
       EXTRA_OPTS: ""
