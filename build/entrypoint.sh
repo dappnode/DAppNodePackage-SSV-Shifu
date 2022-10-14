@@ -4,16 +4,16 @@
 # Assign proper value to _DAPPNODE_GLOBAL_EXECUTION_CLIENT_PRATER.
 case $_DAPPNODE_GLOBAL_EXECUTION_CLIENT_PRATER in
 "goerli-geth.dnp.dappnode.eth")
-    EXECUTION_LAYER_WS="http://goerli-geth.dappnode:8546"
+    EXECUTION_LAYER_WS="ws://goerli-geth.dappnode:8546"
     ;;
 "goerli-nethermind.dnp.dappnode.eth")
-    EXECUTION_LAYER_WS="http://goerli-nethermind.dappnode:8546"
+    EXECUTION_LAYER_WS="ws://goerli-nethermind.dappnode:8546"
     ;;
 "goerli-besu.dnp.dappnode.eth")
-    EXECUTION_LAYER_WS="http://goerli-besu.dappnode:8546"
+    EXECUTION_LAYER_WS="ws://goerli-besu.dappnode:8546"
     ;;
 "goerli-erigon.dnp.dappnode.eth")
-    EXECUTION_LAYER_WS="http://goerli-erigon.dappnode:8546"
+    EXECUTION_LAYER_WS="ws://goerli-erigon.dappnode:8546"
     ;;
 *)
     echo "Unknown value for _DAPPNODE_GLOBAL_EXECUTION_CLIENT_PRATER Please confirm that the value is correct"
