@@ -1,14 +1,14 @@
 version: "3.5"
 services:
-  ssv-shifu.dnp.dappnode.eth:
-    image: "ssv-shifu.dnp.dappnode.eth:0.1.0"
+  ssv:
+    image: "ssv.ssv-shifu.dnp.dappnode.eth:0.1.0"
     build:
       context: build
       args:
         UPSTREAM_VERSION: v0.3.2
     restart: unless-stopped
     volumes:
-      - "shifu:/data"
+      - "ssv:/ssv"
     ports:
       - "12514:12514/tcp"
       - "13514:13514/udp"
@@ -20,4 +20,4 @@ services:
       LOG_LEVEL: info
       EXTRA_OPTS: ""
 volumes:
-  shifu: {}
+  ssv: {}
