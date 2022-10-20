@@ -1,7 +1,7 @@
 {
   "name": "ssv-shifu.dnp.dappnode.eth",
   "version": "0.1.0",
-  "upstreamVersion": "v0.3.3",
+  "upstreamVersion": "v0.3.4",
   "upstreamRepo": "bloxapp/ssv",
   "upstreamArg": "UPSTREAM_VERSION",
   "shortDescription": "Secret Shared Validator Goerli Shifu Testnet",
