@@ -4,6 +4,7 @@ fields:
     target:
       type: environment
       name: OPERATOR_PRIVATE_KEY
+      service: ssv
     title: Operator Secret Key
     description: |-
       The secret key of your operator, to generate a new one you will need access to a terminal on a machine connected to the Internet with Docker installed, such as your Dappnode.  You need to run the following command :
@@ -21,6 +22,7 @@ fields:
     target:
       type: environment
       name: LOG_LEVEL
+      service: ssv
     title: Log Level
     description: >-
       Defines logger's log level
