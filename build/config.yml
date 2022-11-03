@@ -4,9 +4,6 @@ eth2:
   Network:
   BeaconNodeAddr:
 eth1:
-  ETH1Addr:
-p2p:
-   TCPPort:
-   UDPPort:
+  ETH1Addr: 
 OperatorPrivateKey:
 MetricsAPIPort: 15000

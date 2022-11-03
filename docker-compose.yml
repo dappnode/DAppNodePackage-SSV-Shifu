@@ -8,7 +8,7 @@ services:
         UPSTREAM_VERSION: v0.3.4
     restart: unless-stopped
     volumes:
-      - "shifu:/data"
+      - "ssv:/ssv"
     ports:
       - "12514:12514/tcp"
       - "13514:13514/udp"
@@ -17,9 +17,7 @@ services:
       DB_PATH: /data/db
       NETWORK: prater
       OPERATOR_PRIVATE_KEY: ""
-      P2P_TCP_PORT: 12514
-      P2P_UDP_PORT: 13514
       LOG_LEVEL: info
       EXTRA_OPTS: ""
 volumes:
-  shifu: {}
+  ssv: {}
