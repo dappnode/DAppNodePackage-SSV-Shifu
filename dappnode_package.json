@@ -10,7 +10,7 @@
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "contributors": [
     "Eduardo Antuña <edu@dappnode.io> (https://github.com/eduadiez)",
-    "Voss <alex@visnovaventures.com> (https://github.com/alexpeterson91)"
+    "Voss <voss@vVisNovaLabs.io> (https://github.com/alexpeterson91)"
   ],
   "categories": ["Blockchain", "ETH2.0"],
   "license": "GPL-3.0",
@@ -28,8 +28,5 @@
   },
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-SSV-Shifu/issues"
-  },
-  "dependencies": {
-    "goerli-geth.dnp.dappnode.eth": "latest"
   }
 }
