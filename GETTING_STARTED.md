@@ -4,7 +4,11 @@ If you entered your SK (Secret Key) during the install of this package, you've c
 
 For it to function properly, you'll have to register it with the SSV network.
 
-## Operator Registration
+## _**IMPORTANT**_
+
+_This package requires a synced Ethereum Göerli/Prater Testnet Client Stack, as configured in the StakersUI in order to function.  Without this it will not function.  It has been tested with all clients currently availble in the store._
+
+### Operator Registration
 
 Registration is free and open to anyone who wishes to operate other validators, and is done by broadcasting a transaction to the SSV network smart contract (in Goerli) with your operator's display name and public key that was generated as part of your node setup.
 
