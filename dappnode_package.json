@@ -4,6 +4,7 @@
   "upstreamVersion": "v0.3.4",
   "upstreamRepo": "bloxapp/ssv",
   "upstreamArg": "UPSTREAM_VERSION",
+  "architectures": ["linux/amd64"],
   "shortDescription": "Secret Shared Validator Goerli Shifu Testnet",
   "description": "SSV.network is a decentralized ETH staking network enabling the distributed operation of an Ethereum validator. The network allows both users and operators to diversify staking risks, optimize performance, and promote decentralization across the Ethereum consensus layer.",
   "type": "service",
@@ -15,12 +16,12 @@
   "categories": ["Blockchain", "ETH2.0"],
   "license": "GPL-3.0",
   "links": {
-    "explorer": "https://explorer.ssv.network/",
-    "homepage": "https://ssv.network/",
-    "Deposit Bot": "https://discord.gg/CBwPUX2Aav",
+    "Explorer": "https://explorer.ssv.network/",
+    "Homepage": "https://ssv.network/",
+    "Validator Deposit Bot": "https://discord.gg/CBwPUX2Aav",
     "Docs": "https://docs.ssv.network/learn/introduction",
     "tSSV Faucet": "https://faucet.ssv.network/",
-    "Web App": "http://app.ssv.network/"
+    "SSV Web App": "http://app.ssv.network/"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,14 @@
   },
   "bugs": {
     "url": "https://github.com/dappnode/DAppNodePackage-SSV-Shifu/issues"
-  }
+  },
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.58"
+  },
+  "globalEnvs": [
+    {
+      "envs": ["EXECUTION_CLIENT_PRATER", "CONSENSUS_CLIENT_PRATER"],
+      "services": ["ssv"]
+    }
+  ]
 }

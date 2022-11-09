@@ -1,7 +1,7 @@
-version: "3.4"
+version: "3.5"
 services:
-  ssv-shifu.dnp.dappnode.eth:
-    image: "ssv-shifu.dnp.dappnode.eth:0.1.0"
+  ssv:
+    image: "ssv.ssv-shifu.dnp.dappnode.eth:0.1.0"
     build:
       context: build
       args:
@@ -10,15 +10,15 @@ services:
     volumes:
       - "shifu:/data"
     ports:
-      - "12514:12514/TCP"
-      - "13514:13514/UDP"
+      - "12514:12514/tcp"
+      - "13514:13514/udp"
     environment:
       CONFIG_PATH: ./config.yml
       DB_PATH: /data/db
       NETWORK: prater
-      BEACON_NODE_ADDR: "beacon-chain.prysm-prater.dappnode:3500"
-      ETH1ADDR: "ws://goerli-geth.dappnode:8546"
       OPERATOR_PRIVATE_KEY: ""
+      P2P_TCP_PORT: 12514
+      P2P_UDP_PORT: 13514
       LOG_LEVEL: info
       EXTRA_OPTS: ""
 volumes:

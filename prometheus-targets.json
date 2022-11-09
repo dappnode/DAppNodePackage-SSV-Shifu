@@ -2,21 +2,21 @@
     {
         "labels": {
             "package": "ssv-shifu.dnp.dappnode.eth",
-            "service": "ssv-shifu.dappnode",
+            "service": "ssv.ssv-shifu.dappnode",
             "__metrics_path__": "/metrics"
         },
         "targets": [
-            "ssv-shifu.dappnode:15000"
+            "ssv.ssv-shifu.dappnode:15000"
         ]
     },
     {
         "labels": {
             "package": "ssv-shifu.dnp.dappnode.eth",
-            "service": "ssv-shifu.dappnode",
+            "service": "ssv.ssv-shifu.dappnode",
             "__metrics_path__": "/health"
         },
         "targets": [
-            "ssv-shifu.dappnode:15000"
+            "ssv.ssv-shifu.dappnode:15000"
         ]
     }
 ]
