@@ -12,7 +12,7 @@ case $_DAPPNODE_GLOBAL_EXECUTION_CLIENT_PRATER in
     _EXECUTION_LAYER_WS="ws://goerli-besu.dappnode:8546"
     ;;
 "goerli-erigon.dnp.dappnode.eth")
-    _EXECUTION_LAYER_WS="ws://goerli-erigon.dappnode:8546"
+    _EXECUTION_LAYER_WS="ws://goerli-erigon.dappnode:8545"
     ;;
 *)
     echo "Unknown value for _DAPPNODE_GLOBAL_EXECUTION_CLIENT_PRATER Please confirm that the value is correct"
