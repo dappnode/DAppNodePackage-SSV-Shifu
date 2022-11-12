@@ -8,6 +8,12 @@
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
         "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
         "type": "dashboard"
       }
     ]
@@ -15,8 +21,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": null,
-  "iteration": 1631688084016,
+  "id": 59,
+  "iteration": 1668202049142,
   "links": [],
   "panels": [
     {
@@ -107,7 +113,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.0.4",
+      "pluginVersion": "8.1.8",
       "targets": [
         {
           "exemplar": true,
@@ -171,7 +177,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.0.4",
+      "pluginVersion": "8.1.8",
       "targets": [
         {
           "exemplar": true,
@@ -191,7 +197,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 16
+        "y": 7
       },
       "id": 56,
       "panels": [],
@@ -227,7 +233,7 @@
         "h": 6,
         "w": 8,
         "x": 0,
-        "y": 17
+        "y": 8
       },
       "id": 42,
       "options": {
@@ -245,7 +251,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.0.4",
+      "pluginVersion": "8.1.8",
       "targets": [
         {
           "exemplar": true,
@@ -320,7 +326,7 @@
         "h": 6,
         "w": 6,
         "x": 8,
-        "y": 17
+        "y": 8
       },
       "id": 50,
       "options": {
@@ -338,7 +344,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.0.4",
+      "pluginVersion": "8.1.8",
       "targets": [
         {
           "exemplar": true,
@@ -421,7 +427,7 @@
         "h": 6,
         "w": 6,
         "x": 14,
-        "y": 17
+        "y": 8
       },
       "id": 46,
       "options": {
@@ -439,7 +445,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.0.4",
+      "pluginVersion": "8.1.8",
       "targets": [
         {
           "exemplar": true,
@@ -481,7 +487,7 @@
         "h": 6,
         "w": 8,
         "x": 0,
-        "y": 23
+        "y": 14
       },
       "id": 54,
       "options": {
@@ -499,7 +505,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.0.4",
+      "pluginVersion": "8.1.8",
       "targets": [
         {
           "exemplar": true,
@@ -541,7 +547,7 @@
         "h": 6,
         "w": 8,
         "x": 8,
-        "y": 23
+        "y": 14
       },
       "id": 52,
       "options": {
@@ -559,7 +565,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.0.4",
+      "pluginVersion": "8.1.8",
       "targets": [
         {
           "exemplar": true,
@@ -613,7 +619,7 @@
         "h": 6,
         "w": 4,
         "x": 16,
-        "y": 23
+        "y": 14
       },
       "id": 48,
       "options": {
@@ -631,7 +637,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.0.4",
+      "pluginVersion": "8.1.8",
       "targets": [
         {
           "exemplar": true,
@@ -655,8 +661,8 @@
         "allValue": null,
         "current": {
           "selected": true,
-          "text": "ssv-prater.dappnode",
-          "value": "ssv-prater.dappnode:15000"
+          "text": "ssv.ssv-shifu.dappnode",
+          "value": "ssv.ssv-shifu.dappnode:15000"
         },
         "description": null,
         "error": null,
@@ -668,11 +674,11 @@
         "options": [
           {
             "selected": true,
-            "text": "ssv-prater.dappnode",
-            "value": "ssv-prater.dappnode:15000"
+            "text": "ssv.ssv-shifu.dappnode",
+            "value": "ssv.ssv-shifu.dappnode:15000"
           }
         ],
-        "query": "ssv-prater.dappnode",
+        "query": "ssv.ssv-shifu.dappnode",
         "queryValue": "",
         "skipUrlSync": false,
         "type": "custom"
@@ -710,5 +716,5 @@
   "timezone": "",
   "title": "SSV Validator",
   "uid": "XIbEQ37aa",
-  "version": 17
+  "version": 1
 }
