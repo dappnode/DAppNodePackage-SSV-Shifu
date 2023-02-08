@@ -1,15 +1,19 @@
-# Dappnode Package SSV Göerli Testnet V2 "Shifu"
+# Dappnode Package SSV Göerli Testnet "Shifu" V2
 
-This package allows Dappnode Users to help test the SSV Network.
+This package allows Dappnode Users to help test the SSV Network.  A pioneer in the field of DVT (Decentralized Validator Technology), SSV is a network of validators that use a decentralized network of operators to run their validators.  This package allows you to run an SSV Operator Node on the SSV Testnet "Shifu" V2.
 
 Note - You will need SSH or direct console access to your Dappnode in order to use it to generate your operator keys.
 
-_Warning: This package is separate from the SSV Prater Package.
-If you participated in the first V1 SSV testnet "Primus" please keep your operator running until the SSV team announces the official end of the V1 test._
+_Warning: This package is separate from the Original SSV Prater Package.
+If you participated in the first V1 SSV testnet "Primus" please be sure to create a new operator account for this iteration of the SSV Testnet._
+
+_Warning: This package has been modified for the Shifu V2 Testnet, which will be restarted in Mid-February 2023. SSV Shifu Operators must upgrade to this version of the package or higher in order to continue operating on the network._
 
 ## Generate Operator Keys
 
-**DO NOT** Reuse keys from V1. You need to create new keys and register them [here](https://app.ssv.network/join/operator/register)
+**DO NOT** Reuse keys from the V1 "Primus" Testnet; You need to create new keys and register them [here](https://app.ssv.network/join/operator/register) .
+
+For Operators created for V1 of the "Shifu" Testnet, you can continue using your same operator/keys in V2, but please note that during the upgrade period the SSV Web App and Web Explorer will be be down for upgrades.
 
 You'll need a keypair in order to run an operator on SSV. To generate a new keypair, you will need access to a terminal on a machine connected to the Internet with Docker installed, such as your Dappnode.  You need to run the following command :
       
@@ -23,10 +27,10 @@ This command will generate a PK (Public Key) and a SK (Secret Key). Make sure to
 
 Registration is free and open to anyone who wishes to operate validators with SSV. This is done in the Web App linked below.
 
-Register your new operator (**DO NOT REUSE OPERATORS FROM THE V1 TESTNET**) using this [Web App](https://app.ssv.network/join/operator/register)
+Register your new operator (**DO NOT REUSE OPERATORS FROM THE V1 "Primus" TESTNET**) using this [Web App](https://app.ssv.network/join/operator/register)
 
 Follow [these instructions](https://docs.ssv.network/run-a-node/operator-node/registration) to register your operator.
-After registration, your operator becomes discoverable as one of the network's operators and SSV stakers can choose you as one of their validators operators.
+After registration, your operator becomes discoverable as one of the network's operators and SSV stakers can choose you as one of their validator's operators.
 
 Full official documentation can be found [here](https://docs.ssv.network/learn/introduction).
 
