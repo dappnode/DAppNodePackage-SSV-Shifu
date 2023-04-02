@@ -38,10 +38,7 @@
       "type": "row"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Current status of the beacon, ETH1 and SSV operator node",
       "fieldConfig": {
         "defaults": {
@@ -164,10 +161,7 @@
       "pluginVersion": "8.3.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv_beacon_status{instance=~\"$instance.*\"}",
           "instant": true,
@@ -176,10 +170,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv_eth1_status{instance=~\"$instance.*\"}",
           "hide": false,
@@ -189,10 +180,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "(ssv_node_status{instance=~\"$instance.*\"} + 1) or (absent(ssv_node_status{instance=~\"$instance.*\"}) * 0)",
           "hide": false,
@@ -206,10 +194,7 @@
       "type": "gauge"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Health status of the beacon node",
       "fieldConfig": {
         "defaults": {
@@ -308,10 +293,7 @@
       "pluginVersion": "8.0.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "ssv_beacon_status{instance=~\"$instance.*\"}",
           "interval": "",
@@ -323,10 +305,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Health status of the ETH1 node",
       "fieldConfig": {
         "defaults": {
@@ -425,10 +404,7 @@
       "pluginVersion": "8.0.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "ssv_eth1_status{instance=~\"$instance.*\"}",
           "interval": "",
@@ -440,10 +416,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Health status of the SSV operator node",
       "fieldConfig": {
         "defaults": {
@@ -535,10 +508,7 @@
       "pluginVersion": "8.0.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "ssv_node_status{instance=~\"$instance.*\"} + 1",
           "format": "time_series",
@@ -548,10 +518,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "absent(ssv_node_status{instance=~\"$instance.*\"}) * 0",
           "hide": false,
@@ -581,10 +548,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "decimals": 2,
       "description": "RAM memory usage of the SSV operator node",
       "editable": true,
@@ -632,10 +596,7 @@
       "steppedLine": true,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "sum (container_memory_working_set_bytes{image!=\"\", pod=~\"$instance.*\"}) by (pod)",
           "format": "time_series",
@@ -683,10 +644,7 @@
       }
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Go memory usage of the SSV operator node",
       "fieldConfig": {
         "defaults": {
@@ -798,10 +756,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Number of go routines running on the SSV operator node",
       "fieldConfig": {
         "defaults": {},
@@ -903,10 +858,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "decimals": 3,
       "description": "CPU usage of the SSV operator node",
       "editable": true,
@@ -1008,10 +960,7 @@
       }
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Hard drive memory usage of the SSV operator node",
       "fieldConfig": {
         "defaults": {
@@ -1108,10 +1057,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Network input and output usage of the SSV operator node",
       "fieldConfig": {
         "defaults": {
@@ -1189,10 +1135,7 @@
       "pluginVersion": "8.3.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "sum (rate (container_network_receive_bytes_total{pod=~\"$instance.*\"}[1m])) by (pod)",
           "hide": false,
@@ -1205,10 +1148,7 @@
           "step": 10
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "sum (rate (container_network_transmit_bytes_total{pod=~\"$instance.*\"}[1m])) by (pod)",
           "hide": false,
@@ -1238,10 +1178,7 @@
       "type": "row"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Number of connected peers to the SSV operator node",
       "fieldConfig": {
         "defaults": {
@@ -1295,10 +1232,7 @@
       "pluginVersion": "8.3.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "ssv_p2p_all_connected_peers{instance=~\"$instance.*\"}",
           "interval": "",
@@ -1310,10 +1244,7 @@
       "type": "stat"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Subnet peer distribution based on topic",
       "fieldConfig": {
         "defaults": {
@@ -1387,10 +1318,7 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "ssv_p2p_connected_peers{instance=~\"$instance.*\"}",
           "interval": "",
@@ -1402,10 +1330,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Subnet peers breakdown table of the SSV operator node",
       "fieldConfig": {
         "defaults": {
@@ -1516,10 +1441,7 @@
       "pluginVersion": "8.3.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv:network:subnets:known{instance=~\"$instance.*\"}",
           "format": "table",
@@ -1529,10 +1451,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv:network:subnets:connected{instance=~\"$instance.*\"}",
           "format": "table",
@@ -1543,10 +1462,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv:network:subnets:my{instance=~\"$instance.*\"}",
           "format": "table",
@@ -1615,10 +1531,7 @@
       "type": "table"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "The discovery rate of the subnet peers.\nFound is rate per second of nodes that were found with discovery. Rejected is rate per second of nodes that were found with discovery but rejected because of limit or subnet",
       "fieldConfig": {
         "defaults": {
@@ -1689,10 +1602,7 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate(ssv:network:discovery:found{instance=~\"$instance.*\"}[5m])",
           "interval": "",
@@ -1700,10 +1610,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate(ssv:network:discovery:rejected{instance=~\"$instance.*\"}[5m])",
           "hide": false,
@@ -1716,10 +1623,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Table breakdown of all the SSV operator nodes",
       "fieldConfig": {
         "defaults": {
@@ -1896,10 +1800,7 @@
       "pluginVersion": "8.3.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate(ssv:network:peers_identity{instance=~\"$instance.*\"}[5m])",
           "format": "table",
@@ -2047,10 +1948,7 @@
       "type": "row"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Rate per second of inbound / outbound topic messages over the last 5 minutes",
       "fieldConfig": {
         "defaults": {
@@ -2123,10 +2021,7 @@
       "pluginVersion": "8.3.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "sum (rate(ssv:p2p:pubsub:msg:in{instance=~\"$instance.*\"}[5m]))",
           "format": "time_series",
@@ -2136,10 +2031,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "sum (rate(ssv:p2p:pubsub:msg:in{instance=~\"$instance.*\", msg_type=\"0\"}[5m]))",
           "format": "time_series",
@@ -2150,10 +2042,7 @@
           "refId": "C"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "sum (rate(ssv:p2p:pubsub:msg:in{instance=~\"$instance.*\", msg_type=\"1\"}[5m]))",
           "format": "time_series",
@@ -2164,10 +2053,7 @@
           "refId": "D"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "sum (rate(ssv:p2p:pubsub:msg:in{instance=~\"$instance.*\", msg_type=\"2\"}[5m]))",
           "format": "time_series",
@@ -2178,10 +2064,7 @@
           "refId": "E"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "sum (rate(ssv:p2p:pubsub:msg:out{instance=~\"$instance.*\"}[5m]))",
           "format": "time_series",
@@ -2196,10 +2079,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Rate per second of incoming topic messages for every topic over the last 5 minutes",
       "fieldConfig": {
         "defaults": {
@@ -2276,10 +2156,7 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate (ssv:p2p:pubsub:msg:in{instance=~\"$instance.*\"}[5m])",
           "interval": "",
@@ -2291,10 +2168,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Rate per second of outgoing topic messages for every topic over the last 5 minutes.\nResponses are outgoing, for incoming requests.\nSuccessful Requests are outgoing.\nActive are outgoing requests.",
       "fieldConfig": {
         "defaults": {
@@ -2370,10 +2244,7 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate (ssv:p2p:pubsub:msg:out{instance=~\"$instance.*\"}[5m])",
           "interval": "",
@@ -2385,10 +2256,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Table breakdown for each stream protocol.\nResponses are outgoing, for incoming requests.\nSuccessful Requests are outgoing.\nActive Requests are outgoing.",
       "fieldConfig": {
         "defaults": {
@@ -2458,10 +2326,7 @@
       "pluginVersion": "8.3.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv:p2p:streams:res{instance=~\"$instance.*\"}",
           "format": "table",
@@ -2471,10 +2336,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv:p2p:streams:req:count{instance=~\"$instance.*\"}",
           "format": "table",
@@ -2485,10 +2347,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv:p2p:streams:req:success{instance=~\"$instance.*\"}",
           "format": "table",
@@ -2499,10 +2358,7 @@
           "refId": "C"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": false,
           "expr": "ssv:p2p:streams:req:active{instance=~\"$instance.*\"}",
           "format": "table",
@@ -2556,10 +2412,7 @@
       "type": "table"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "eXfXfqH7z"
-      },
+      "datasource": "Prometheus",
       "description": "Rate per second of requests,  responses and active requests.\nResponses are outgoing, for incoming requests.\nSuccessful Requests are outgoing.\nActive are outgoing requests.",
       "fieldConfig": {
         "defaults": {
@@ -2627,10 +2480,7 @@
       "pluginVersion": "8.3.4",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate(ssv:p2p:streams:res{instance=~\"$instance.*\"}[5m])",
           "format": "time_series",
@@ -2640,10 +2490,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate(ssv:p2p:streams:req:count{instance=~\"$instance.*\"}[5m])",
           "format": "time_series",
@@ -2654,10 +2501,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate(ssv:p2p:streams:req:success{instance=~\"$instance.*\"}[5m])",
           "format": "time_series",
@@ -2668,10 +2512,7 @@
           "refId": "C"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "eXfXfqH7z"
-          },
+          "datasource": "Prometheus",
           "exemplar": true,
           "expr": "rate(ssv:p2p:streams:req:active{instance=~\"$instance.*\"}[5m])",
           "format": "time_series",
@@ -2695,8 +2536,8 @@
       {
         "current": {
           "selected": false,
-          "text": "ssv-node-v3-1",
-          "value": "ssv-node-v3-1"
+          "text": "ssv.ssv-shifu.dappnode",
+          "value": "ssv.ssv-shifu.dappnode:15000"
         },
         "description": "",
         "hide": 1,
@@ -2706,96 +2547,11 @@
         "options": [
           {
             "selected": false,
-            "text": "ssv-node-v2-1",
-            "value": "ssv-node-v2-1"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v2-2",
-            "value": "ssv-node-v2-2"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v2-3",
-            "value": "ssv-node-v2-3"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v2-4",
-            "value": "ssv-node-v2-4"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v2-5",
-            "value": "ssv-node-v2-5"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v2-6",
-            "value": "ssv-node-v2-6"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v2-7",
-            "value": "ssv-node-v2-7"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v2-8",
-            "value": "ssv-node-v2-8"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-9",
-            "value": "ssv-node-9"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-10",
-            "value": "ssv-node-10"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-11",
-            "value": "ssv-node-11"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-12",
-            "value": "ssv-node-12"
-          },
-          {
-            "selected": false,
-            "text": "ssv-exporter",
-            "value": "ssv-exporter"
-          },
-          {
-            "selected": false,
-            "text": "ssv-exporter-v2",
-            "value": "ssv-exporter-v2"
-          },
-          {
-            "selected": true,
-            "text": "ssv-node-v3-1",
-            "value": "ssv-node-v3-1"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v3-2",
-            "value": "ssv-node-v3-2"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v3-3",
-            "value": "ssv-node-v3-3"
-          },
-          {
-            "selected": false,
-            "text": "ssv-node-v3-4",
-            "value": "ssv-node-v3-4"
+            "text": "ssv.ssv-shifu.dappnode",
+            "value": "ssv.ssv-shifu.dappnode:15000"
           }
         ],
-        "query": "ssv-node-v2-1,ssv-node-v2-2,ssv-node-v2-3,ssv-node-v2-4,ssv-node-v2-5,ssv-node-v2-6,ssv-node-v2-7,ssv-node-v2-8,ssv-node-9,ssv-node-10,ssv-node-11,ssv-node-12,ssv-exporter,ssv-exporter-v2,ssv-node-v3-1,ssv-node-v3-2,ssv-node-v3-3,ssv-node-v3-4",
+        "query": "ssv.ssv-shifu.dappnode",
         "queryValue": "",
         "skipUrlSync": false,
         "type": "custom"
