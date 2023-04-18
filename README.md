@@ -1,19 +1,17 @@
-# Dappnode Package SSV Göerli Testnet "Shifu" V2
+# Dappnode Package SSV Göerli Testnet "Jato" V3
 
-This package allows Dappnode Users to help test the SSV Network.  A pioneer in the field of DVT (Decentralized Validator Technology), SSV is a network of validators that use a decentralized network of operators to run their validators.  This package allows you to run an SSV Operator Node on the SSV Testnet "Shifu" V2.
+This package allows Dappnode Users to help test the SSV Network.  A pioneer in the field of DVT (Decentralized Validator Technology), SSV is a network of validators that use a decentralized network of operators to run their validators.  This package allows you to run an SSV Operator Node on the SSV Testnet "Jato" V3.
 
 Note - You will need SSH or direct console access to your Dappnode in order to use it to generate your operator keys.
 
 _Warning: This package is separate from the Original SSV Prater Package.
 If you participated in the first V1 SSV testnet "Primus" please be sure to create a new operator account for this iteration of the SSV Testnet._
 
-_Warning: This package has been modified for the Shifu V2 Testnet, which will be restarted in Mid-February 2023. SSV Shifu Operators must upgrade to this version of the package or higher in order to continue operating on the network._
+_Warning: This package has been modified for the Jato V3 Testnet, which will be restarted in Mid-February 2023. SSV Shifu Operators must upgrade to this version of the package or higher in order to continue operating on the network._
 
 ## Generate Operator Keys
 
-**DO NOT** Reuse keys from the V1 "Primus" Testnet; You need to create new keys and register them [here](https://app.ssv.network/join/operator/register) .
-
-For Operators created for V1 of the "Shifu" Testnet, you can continue using your same operator/keys in V2, but please note that during the upgrade period the SSV Web App and Web Explorer will be be down for upgrades.
+**DO NOT** Reuse keys from the V1 "Primus" Testnet or V2 "Shifu"; You need to create new keys and register them [here](https://app.ssv.network/join/operator/register) .
 
 You'll need a keypair in order to run an operator on SSV. To generate a new keypair, you will need access to a terminal on a machine connected to the Internet with Docker installed, such as your Dappnode.  You need to run the following command :
       
