@@ -5,7 +5,7 @@
   "upstreamRepo": "bloxapp/ssv",
   "upstreamArg": "UPSTREAM_VERSION",
   "architectures": ["linux/amd64"],
-  "shortDescription": "Secret Shared Validator Goerli Shifu Testnet",
+  "shortDescription": "Secret Shared Validator Goerli Jato Testnet",
   "description": "SSV.network is a decentralized ETH staking network enabling the distributed operation of an Ethereum validator. The network allows both users and operators to diversify staking risks, optimize performance, and promote decentralization across the Ethereum consensus layer.",
   "type": "service",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
