@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - run: npx @dappnode/dappnodesdk build --provider remote
+      - run: npx @dappnode/dappnodesdk build --skip_save
 
   release:
     name: Release
@@ -31,10 +31,6 @@ jobs:
     if: github.event_name == 'push' || github.event_name == 'repository_dispatch' || github.event_name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v2
-      - name: Setup node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "10.x"
       - name: Publish
         run: npx @dappnode/dappnodesdk publish patch --dappnode_team_preset --timeout 1h
         env:
